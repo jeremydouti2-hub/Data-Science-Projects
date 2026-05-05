@@ -1,0 +1,79 @@
+
+Intelligent E-Commerce Data Analytics Platform
+ Overview
+
+This project builds an end-to-end data analytics platform for e-commerce using multiple datasets.
+It integrates data processing, visualization, machine learning, and API deployment into a single system.
+
+
+ Objectives
+Data cleaning & preprocessing
+Exploratory Data Analysis (EDA)
+Interactive visualizations
+SQL-based analytics
+Machine Learning (prediction & classification)
+Customer segmentation (RFM)
+REST API deployment
+ Datasets
+E-Commerce Transactions (541K+ rows)
+Online Retail Data (541K+ rows)
+Customer Shopping Data (99K+ rows)
+Product Data (API JSON)
+ Tech Stack
+
+Python, SQL, Pandas, NumPy, Scikit-learn, Plotly, Flask, SQLite
+
+ Workflow
+Data Ingestion
+Data Cleaning
+EDA
+Visualization
+SQL Analytics
+Machine Learning
+API Deployment
+
+
+ Key Results
+ Business Insights
+Peak revenue: 182,340 (Nov 2011)
+Total revenue: 1.22M+
+UK contributes 84.6% of revenue
+ Machine Learning
+Random Forest (Regression): R² = 0.9998
+Random Forest (Classification): Accuracy = 1.00
+KMeans Clustering: Silhouette = 0.3455
+ Customer Segmentation
+Champions: 29%
+Loyal: 31%
+At-Risk: 22%
+Lost: 18%
+ API
+
+Endpoints:
+
+/api/summary
+/api/top-products
+/api/country-revenue
+/api/monthly-revenue
+
+ Response time: < 15 ms
+
+ Features
+Multi-dataset analytics
+Interactive dashboards
+SQL + Python integration
+Full ML pipeline
+Real-time API access
+ Limitations
+Uses public datasets
+Limited to Colab environment
+No real-time streaming
+ Future Work
+Big Data integration (Spark)
+Cloud deployment
+Real-time analytics
+
+ Author
+
+GOUNTANTE DOUTI
+Vishwakarma University, Pune
