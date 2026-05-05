@@ -1,19 +1,19 @@
 #  Comprehensive Data Analytics for Housing, Sales, and Customer Data
 
-### Correlation, Prediction, and Insight Generation
+    Correlation, Prediction, and Insight Generation
 
 
-##  Overview
+     Overview
 
 This project presents a **complete end-to-end data analytics framework** applied to three real-world datasets across different domains: housing, retail sales, and customer behavior.
 
-The objective is to:
+     The objective is to:
 
-* Understand relationships between variables
-* Build predictive models
-* Extract actionable business insights
+ Understand relationships between variables
+ Build predictive models
+ Extract actionable business insights
 
-The project follows a **three-pillar analytical approach**:
+      The project follows a **three-pillar analytical approach**:
 
 1. Association, Correlation & Regression Analysis
 2. Predictive Analytics (Time Series + Machine Learning)
@@ -21,7 +21,7 @@ The project follows a **three-pillar analytical approach**:
 
 
 
-##  Objectives
+           Objectives
 
 * Identify key drivers of housing prices using statistical methods
 * Forecast retail sales using time-series and machine learning models
@@ -31,20 +31,20 @@ The project follows a **three-pillar analytical approach**:
 
 
 
-##  Datasets
+           Datasets
 
-### 1. California Housing Dataset
+ 1. California Housing Dataset
 
 * 20,000+ records
 * Features: income, location, housing characteristics
 * Target: median house value
 
-### 2. Superstore Sales Dataset
+ 2. Superstore Sales Dataset
 
 * 9,800 transactions (2015–2018)
 * Used for time-series forecasting and ML prediction
 
-### 3. Mall Customer Dataset
+ 3. Mall Customer Dataset
 
 * 200 customers
 * Features: age, income, spending score
@@ -52,7 +52,7 @@ The project follows a **three-pillar analytical approach**:
 
 
 
-##  Technologies Used
+        Technologies Used
 
 * Python
 * Pandas, NumPy
@@ -62,16 +62,16 @@ The project follows a **three-pillar analytical approach**:
 * PySpark (if applicable)
 
 
-##  Methodology
+       Methodology
 
-###  1. Regression & Correlation Analysis
+        1. Regression & Correlation Analysis
 
 * Pearson, Spearman, Kendall correlation
 * Simple & Multiple Linear Regression
 * Regularization: Ridge, Lasso, ElasticNet
 * Logistic Regression (classification)
 
-###  2. Predictive Analytics
+      2. Predictive Analytics
 
 * Time-series modeling (SARIMA)
 * Machine Learning models:
@@ -83,7 +83,7 @@ The project follows a **three-pillar analytical approach**:
 * Ensemble methods
 * Cross-validation
 
-###  3. Exploratory Data Analysis
+ 3. Exploratory Data Analysis
 
 * Descriptive statistics
 * Normality testing
@@ -94,21 +94,21 @@ The project follows a **three-pillar analytical approach**:
 
 
 
-##  Key Results
+    Key Results
 
-###  Housing Analysis
+Housing Analysis
 
 * Median income is the strongest predictor (**r = 0.688**)
 * Multiple regression achieved **R² ≈ 0.64**
 * Logistic regression accuracy: **87.57%**
 
-###  Sales Prediction
+      Sales Prediction
 
 * SARIMA model achieved **MAPE ≈ 18.7%**
 * Best ML model: Gradient Boosting (**R² ≈ 0.30**)
 * Sales driven mainly by product-level features
 
-###  Customer Segmentation
+    Customer Segmentation
 
 * Optimal clusters: **5 segments**
 * Silhouette score: **0.55**
@@ -116,7 +116,7 @@ The project follows a **three-pillar analytical approach**:
 
 
 
-##  Business Insights
+     Business Insights
 
 * **Real Estate**: Focus on high-income regions for investment
 * **Retail**: Improve forecasting using product-level features
@@ -124,7 +124,7 @@ The project follows a **three-pillar analytical approach**:
 * **Customer Strategy**: Re-engage high-income low-spending segment
 
 
-##  Dashboard
+       Dashboard
 
 Interactive dashboards built with Plotly:
 
@@ -135,9 +135,8 @@ Interactive dashboards built with Plotly:
 
 
 
-##  How to Run
+       How to Run
 
-```bash
 pip install pandas numpy scikit-learn matplotlib seaborn plotly statsmodels
 
 jupyter notebook Multi_Domain_Data_Analytics.ipynb
@@ -145,7 +144,7 @@ jupyter notebook Multi_Domain_Data_Analytics.ipynb
 
 -
 
-##  Project Structure
+  Project Structure
 
 ├── data/
 ├── notebooks/
@@ -153,11 +152,10 @@ jupyter notebook Multi_Domain_Data_Analytics.ipynb
 ├── models/
 ├── README.md
 └── Multi_Domain_Data_Analytics.ipynb
-```
 
 
 
-##  Links
+  Links
 
 *  GitHub Code:
   https://github.com/jeremydouti2-hub/Data-Science-Projects/blob/main/Multi_Domain_Data_Analytics.ipynb
@@ -167,7 +165,7 @@ jupyter notebook Multi_Domain_Data_Analytics.ipynb
 
 
 
-##  References
+     References
 
 * California Housing Dataset (Kaggle)
 * Superstore Sales Dataset (Kaggle)
@@ -179,7 +177,7 @@ jupyter notebook Multi_Domain_Data_Analytics.ipynb
 
 
 
-##  Author
+     Author
 
 **GOUNTANTE DOUTI**
 PRN: 31252840
@@ -192,7 +190,7 @@ Vishwakarma University, Pune
 
 
 
-##  Conclusion
+      Conclusion
 
 This project demonstrates a **complete data science pipeline**, integrating statistical analysis, machine learning, and business intelligence to generate actionable insights across multiple domains.
 
