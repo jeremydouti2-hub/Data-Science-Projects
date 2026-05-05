@@ -1,0 +1,178 @@
+#  Predictive Modeling of Credit Scores Through Logistic Regression
+
+##  Overview
+
+This project presents a complete machine learning pipeline for **credit risk assessment and default prediction** using Logistic Regression.
+It was developed as part of an industry internship project under **TCS iON**.
+
+The goal is to build a **transparent, interpretable, and efficient model** capable of predicting whether a loan applicant is likely to default.
+
+
+
+##  Objectives
+
+* Predict **loan default risk** using financial and demographic data
+* Build an **interpretable machine learning model**
+* Evaluate model performance using robust metrics
+* Deploy the model for **real-time inference**
+
+---
+
+##  Methodology
+
+The project follows a complete ML pipeline:
+
+1. **Data Preparation**
+
+   * Data cleaning (no missing values detected)
+   * Feature engineering using VectorAssembler
+   * Feature scaling using StandardScaler
+   * Train/Test split (79% / 21%)
+
+2. **Model Building**
+
+   * Logistic Regression using PySpark MLlib
+   * Convergence achieved in 17 iterations
+
+3. **Evaluation**
+
+   * AUC-ROC
+   * Accuracy
+   * Precision / Recall
+   * F1-score
+
+4. **Hyperparameter Tuning**
+
+   * Grid search (48 configurations)
+   * Best parameters:
+
+     * regParam = 0.01
+     * elasticNetParam = 0.8
+     * threshold = 0.4
+
+5. **Deployment**
+
+   * Model applied on full dataset
+   * Real-time prediction on new profiles
+
+
+
+##  Dataset
+
+* Source: Kaggle (Credit Risk Benchmark Dataset)
+* Total records: **700**
+* Features: **8 financial + demographic variables**
+* Target: **Loan Default (Binary)**
+* Default rate: **~26.14%**
+
+### Key Features:
+
+* Age
+* Income
+* Employment duration
+* Debt-to-income ratio
+* Credit-to-debit ratio
+
+---
+
+##  Results
+
+###  Baseline Model
+
+* Accuracy: **78.23%**
+* AUC-ROC: **0.8508**
+* F1-score: **0.7711**
+
+###  Tuned Model
+
+* AUC-ROC: **0.8530**
+* F1-score: **0.7714**
+* Improved recall with optimized threshold
+
+###  Final Model 
+
+* Accuracy: **80.9%**
+* Strong generalization (low overfitting)
+
+---
+
+##  Key Insights
+
+* **Years of employment** is the strongest protective factor
+* **Debt-to-income ratio** significantly increases default risk
+* Higher income → lower probability of default
+* Model predictions align well with credit score trends
+
+
+
+## Technologies Used
+
+* Python
+* PySpark (Apache Spark MLlib)
+* Pandas, NumPy
+* Matplotlib, Seaborn
+* Google Colab
+
+
+
+##  Project Workflow
+
+```bash
+Data Preparation → Model Building → Evaluation → Tuning → Deployment
+
+
+-
+
+##  Model Interpretability
+
+Logistic Regression provides:
+
+* Clear **feature coefficients**
+* **Odds ratio interpretation**
+* Transparency required in financial systems
+
+
+
+##  Example Predictions
+
+| Profile               | Default Probability | Risk Level |
+| --------------------- | ------------------- | ---------- |
+| High income, low debt | 0.0253              | Low        |
+| Young, high debt      | 0.8690              | High       |
+
+---
+
+## 📌 Conclusion
+
+Logistic Regression proves to be a **powerful and interpretable model** for credit scoring:
+
+* High performance
+* Easy to explain
+* Suitable for real-world financial applications
+
+
+
+##  Project Links
+
+*  GitHub Repository: *(add your link here)*
+*  Google Colab Notebook: *(add your link here)*
+
+
+
+##  Author
+
+**Gountante Douti**
+MSc Data Science – Vishwakarma University
+
+
+
+##  Acknowledgements
+
+* Tata Consultancy Services (TCS iON)
+* Dr. Raeesa Bashir
+* Open-source community
+
+
+##  Keywords
+
+Logistic Regression, Credit Scoring, Machine Learning, PySpark, AUC-ROC, Financial Risk
