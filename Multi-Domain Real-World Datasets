@@ -1,0 +1,92 @@
+Multi-Domain Real-World Datasets
+End-to-End Data Preprocessing Pipeline
+ Overview
+
+This project presents a comprehensive and modular data preprocessing pipeline designed to handle real-world datasets from multiple domains, specifically:
+
+ E-commerce transaction data
+ Healthcare stroke prediction data
+
+The goal is to transform raw, messy data into clean, structured, and analysis-ready datasets through a robust and reusable pipeline.
+
+ Key Features
+ Data Quality Assessment
+ Data Cleaning (missing values, duplicates, outliers)
+ Data Transformation & Feature Engineering
+ Dimensionality Reduction (PCA, Feature Selection)
+ Discretization & Concept Hierarchies
+ Modular and Reusable Pipeline Design
+ Pipeline Architecture
+
+The preprocessing framework is built using three main components:
+
+DataCleaner → Handles missing values, outliers, duplicates
+DataTransformer → Feature engineering, encoding, scaling
+DataReducer → PCA, feature selection, sampling
+
+These components are orchestrated into a flexible end-to-end pipeline.
+
+ Datasets
+1. E-Commerce Dataset
+ ~541,000 transactions
+ Multiple countries
+ Issues: missing customer IDs, duplicates, invalid values
+2. Stroke Prediction Dataset
+ 5,110 patient records
+ Clinical & demographic features
+ Issues: missing BMI, class imbalance
+ Techniques Used
+Missing value imputation (KNN, mode, sentinel values)
+Outlier handling (IQR, winsorization)
+Feature engineering (RFM, risk score)
+Encoding (label, one-hot, frequency, ordinal)
+Scaling (MinMax, Standard, Robust)
+Dimensionality reduction:
+PCA
+SelectKBest
+Random Forest importance
+Discretization:
+Equal-width / frequency
+Entropy-based
+K-means
+Domain-based
+ Results
+ 100% missing values handled
+ Significant reduction in duplicates
+ Improved data consistency and validity
+ Dimensionality reduced while preserving >95% variance
+ Enhanced interpretability through discretization and feature engineering
+ Technologies Used
+Python 3
+Pandas
+NumPy
+Scikit-learn
+Matplotlib / Seaborn
+
+ Project Structure
+├── data/
+├── notebooks/
+├── src/
+│   ├── data_cleaner.py
+│   ├── data_transformer.py
+│   ├── data_reducer.py
+│   └── pipeline.py
+├── results/
+├── README.md
+
+ Objective
+
+To build a scalable, reusable, and domain-adaptable preprocessing framework that improves:
+
+Data quality
+Analytical readiness
+Model performance
+ Conclusion
+
+This project demonstrates that structured and modular preprocessing significantly enhances the quality and usability of real-world datasets, making it a critical step in any data science workflow.
+
+ Author
+
+GOUNTANTE DOUT
+ Vishwakarma University, Pune
+ Data Mining & Analytics
