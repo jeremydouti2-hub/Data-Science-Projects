@@ -1,0 +1,69 @@
+Data Mining Framework for Association Rules & Analytics
+       Project Overview
+
+This project presents the design and implementation of a comprehensive data mining framework integrating multiple analytical techniques, including association rules, classification, regression, and clustering. The goal is to extract meaningful insights from real-world datasets across different domains such as e-commerce, healthcare, and housing.
+
+       Objectives
+Implement and compare key data mining algorithms
+Optimize model performance using tuning and evaluation techniques
+Generate actionable business insights from multi-domain datasets
+          Datasets Used
+ Groceries Dataset (E-commerce) – Market basket analysis
+ Stroke Prediction Dataset (Healthcare) – Classification task
+ California Housing Dataset – Regression & clustering
+ Techniques & Algorithms
+ Association Rule Mining
+Apriori
+FP-Growth
+ECLAT
+Metrics: Support, Confidence, Lift
+         Classification
+Decision Tree
+Naive Bayes
+SVM
+Random Forest
+Gradient Boosting
+AdaBoost, Bagging
+Voting Ensemble
+        Regression
+Linear Regression, Ridge, Lasso
+Polynomial Regression
+Random Forest Regressor
+Gradient Boosting
+XGBoost
+         Clustering
+K-Means
+Hierarchical Clustering
+DBSCAN
+Gaussian Mixture Models (GMM)
+       Key Results
+Random Forest achieved the best classification performance (F1 ≈ 0.99)
+XGBoost delivered the highest regression accuracy (R² > 0.80)
+K-Means showed the most effective clustering performance
+Association rule mining highlighted frequent item patterns but required lower support thresholds for strong rules
+ Business Insights
+ Retail: Identify top-selling products for promotions and bundling
+ Healthcare: Predict stroke risk with high accuracy
+ Real Estate: Estimate house prices and segment markets
+ Segmentation: Discover customer and geographic clusters
+     Technologies Used
+Python (Google Colab)
+Pandas, NumPy
+Scikit-learn
+MLxtend
+XGBoost
+Matplotlib & Seaborn
+
+       GitHub Repository
+
+ https://github.com/jeremydouti2-hub/Data-Science-Projects/blob/main/Modular_3_DMA.ipynb
+
+       Conclusion
+
+This project demonstrates how integrating multiple data mining techniques into a unified framework enables better decision-making and deeper insights across various industries.
+
+        Author
+
+GOUNTANTE DOUTI
+Under the mentorship of Dr. Sanjay Kumar Pal
+Vishwakarma University, Pune
