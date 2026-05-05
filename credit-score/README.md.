@@ -16,7 +16,6 @@ The goal is to build a **transparent, interpretable, and efficient model** capab
 * Evaluate model performance using robust metrics
 * Deploy the model for **real-time inference**
 
----
 
 ##  Methodology
 
@@ -73,7 +72,6 @@ The project follows a complete ML pipeline:
 * Debt-to-income ratio
 * Credit-to-debit ratio
 
----
 
 ##  Results
 
@@ -140,9 +138,9 @@ Logistic Regression provides:
 | High income, low debt | 0.0253              | Low        |
 | Young, high debt      | 0.8690              | High       |
 
----
 
-## 📌 Conclusion
+
+##  Conclusion
 
 Logistic Regression proves to be a **powerful and interpretable model** for credit scoring:
 
