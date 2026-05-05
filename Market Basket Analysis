@@ -1,0 +1,103 @@
+         Customer Segmentation & Market Basket Analysis
+Application of Data Mining Techniques on E-commerce Data
+
+          Project Overview
+
+This project applies data mining techniques to analyze customer purchasing behaviour using a real-world e-commerce dataset. The goal is to extract meaningful insights that support data-driven decision-making in online retail.
+
+The project focuses on two main tasks:
+
+Customer Segmentation using RFM analysis and K-Means clustering
+Market Basket Analysis using the Apriori algorithm to discover product associations
+
+        Dataset
+Source: Kaggle E-commerce Dataset
+Time Period: December 2010 – December 2011
+Initial Records: 541,909 transactions
+
+After preprocessing:
+
+Clean Records: 391,283
+Customers: 4,334
+Products: 3,660
+Total Revenue: £8.74M
+ Data Preprocessing
+
+The dataset was cleaned using a structured pipeline:
+
+Removal of missing Customer IDs
+ duplicate records
+Filtering invalid quantities and prices
+Removal of cancelled transactions
+Exclusion of non-product entries
+ Customer Segmentation (RFM + K-Means)
+ RFM Features
+Recency – Days since last purchase
+Frequency – Number of transactions
+Monetary – Total spending
+ Clustering
+      Algorithm: K-Means
+Optimal Clusters: K = 4
+Silhouette Score: 0.47
+ Customer Segments
+ Champions (High Value)
+ Loyal Customers
+ At-Risk Customers
+ Inactive Customers
+ Validation
+Logistic Regression Accuracy: 99.54%
+Random Forest Accuracy: 98.85%
+ Market Basket Analysis (Apriori)
+Minimum Support: 0.02
+Minimum Confidence: 0.50
+Minimum Lift: 2.0
+
+         Results
+Extracted 30 strong association rules
+Strongest product relationship:
+Regency Teacup & Saucer variants
+Lift: 24.11
+ Insights
+Customers tend to buy product variants together
+Strong opportunities for:
+Cross-selling
+Product bundling
+Recommendation systems
+
+              Key Insights
+A small group of customers generates most revenue
+Customer behaviour is highly skewed (Pareto principle)
+Product associations reveal strong purchasing patterns
+Data mining enables targeted marketing strategies
+
+             Business Applications
+Personalized recommendations
+Customer retention strategies
+Product bundling
+Targeted marketing campaigns
+
+ Technologies Used
+Python
+Pandas, NumPy
+Scikit-learn
+MLxtend
+Matplotlib / Seaborn
+Google Colab
+
+
+                        Project Code
+
+
+https://github.com/jeremydouti2-hub/Data-Science-Projects/blob/main/Application_of_Data_Mining_Techniques_to_Analyse_Customer_Purchasing_Behaviour_in_E_commerce_Data.ipynb
+
+
+                   References
+Agrawal & Srikant (1994) – Association Rules
+Han et al. (2011) – Data Mining Concepts
+Kaggle Dataset – E-commerce Data
+
+                          Author
+
+GOUNTANTE DOUTI
+Vishwakarma University, Pune
+Mentor: Dr. Sanjay Kumar Pal
