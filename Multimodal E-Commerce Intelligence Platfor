@@ -1,0 +1,126 @@
+# Multimodal E-Commerce Intelligence Platform  
+### Product Classification and Customer Sentiment Analysis
+
+##  Project Overview
+
+This project presents a **multimodal data analytics pipeline** designed for e-commerce intelligence using both **text and image data**. It focuses on three core tasks:
+
+- Customer sentiment analysis from product reviews  
+- Topic modeling and text understanding from multiple corpora  
+- Image classification using CIFAR-10 dataset  
+
+The system integrates classical Machine Learning, Deep Learning, and NLP techniques to extract insights from heterogeneous data sources.
+
+
+##  Objectives
+
+- Build a complete end-to-end data analytics pipeline
+- Compare multiple NLP preprocessing and feature extraction techniques
+- Evaluate sentiment analysis models on imbalanced datasets
+- Perform topic modeling across heterogeneous text corpora
+- Apply named entity recognition for structured text understanding
+- Implement image classification using both classical and deep learning methods
+- Compare HOG + PCA vs CNN-based image recognition
+
+
+
+##  Datasets Used
+
+- **20 Newsgroups Dataset** → Text classification and topic modeling  
+- **Customer Reviews Dataset (CSV)** → Sentiment analysis  
+- **Wikipedia Corpus** → Topic modeling (BERTopic)  
+- **CIFAR-10 Dataset** → Image classification  
+
+
+
+##  Methodology
+
+### 1. Data Preprocessing
+- Tokenization
+- Stopword removal
+- Stemming & Lemmatization
+- Text normalization
+- Image normalization (pixel scaling)
+
+### 2. Feature Engineering
+- Bag of Words (BoW)
+- TF-IDF
+- Word2Vec embeddings
+- GloVe embeddings
+- HOG features for images
+
+### 3. Machine Learning Models
+- Logistic Regression
+- Linear SVC
+- Random Forest
+
+### 4. Deep Learning Models
+- BiLSTM for sentiment analysis
+- Custom CNN for CIFAR-10 classification
+
+### 5. Topic Modeling
+- Latent Dirichlet Allocation (LDA)
+- Non-negative Matrix Factorization (NMF)
+- BERTopic (Transformer-based)
+
+### 6. Named Entity Recognition
+- spaCy pre-trained NLP pipeline
+
+
+
+##  Key Findings
+
+- Lemmatization outperformed stemming in preserving semantic meaning  
+- TF-IDF improved classification performance over raw BoW  
+- Word2Vec and GloVe captured semantic relationships effectively  
+- Severe class imbalance strongly impacted sentiment models  
+- Accuracy alone is misleading for imbalanced datasets  
+- CNN significantly outperformed HOG + PCA for image classification  
+- BERTopic produced the most coherent topics among all models  
+
+
+
+##  Model Performance Summary
+
+### Sentiment Analysis
+
+| Model               | Accuracy | F1 Score |
+|--------------------|----------|----------|
+| Logistic Regression | 0.7085   | 0.0470   |
+| Linear SVC         | 0.6946   | 0.1137   |
+| Random Forest      | 0.6877   | 0.1509   |
+| BiLSTM             | 0.7115   | 0.0000   |
+
+---
+
+##  Image Classification
+
+- HOG + PCA: Limited performance due to high dimensionality loss  
+- Custom CNN: Superior feature learning and classification accuracy  
+
+
+
+##  Technologies Used
+
+- Python
+- NumPy, Pandas
+- Scikit-learn
+- NLTK, spaCy
+- Gensim
+- TensorFlow / Keras
+- Matplotlib, Seaborn
+- BERTopic
+
+
+
+##  How to Run
+
+
+# Clone repository
+git clone https://github.com/your-username/your-repo-name.git
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run notebook
+jupyter notebook
