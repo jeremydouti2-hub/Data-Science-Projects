@@ -1,0 +1,126 @@
+#  Customer Satisfaction Analysis using Data Mining & Analytics
+
+##  Project Overview
+
+This project presents a complete **data analytics pipeline**, starting from raw, messy real-world data to meaningful business insights. The objective is to identify the key factors influencing **customer satisfaction** in the hospitality industry using the **Hotel Booking Demand dataset**.
+
+The project follows a structured approach including **data preprocessing, exploratory data analysis (EDA), statistical modeling, and business recommendations**.
+
+
+
+##  Business Problem
+
+**What factors most influence customer satisfaction and how can we improve it?**
+
+Since no direct satisfaction score is available, **Average Daily Rate (ADR)** and booking behavior are used as proxy indicators of customer satisfaction and perceived value.
+
+
+
+##  Dataset
+
+* **Source:** Kaggle – Hotel Booking Demand Dataset
+* **Records:** 119,390 (reduced to 87,396 after cleaning)
+* **Features:** 30+ variables including booking details, customer demographics, and pricing
+
+
+
+##  Project Workflow
+
+###  1. Data Quality Assessment
+
+* Identified missing values in `agent`, `company`, `country`, and `children`
+* Detected and removed duplicate records
+* Checked data types and inconsistencies
+
+---
+
+###  2. Data Cleaning & Preprocessing
+
+* Removed `company` column due to excessive missing values
+* Imputed missing values using median and mode
+* Standardized categorical variables
+* Created new features:
+
+  * `total_guests`
+  * `total_nights`
+
+
+
+###  3. Exploratory Data Analysis (EDA)
+
+* Distribution analysis of ADR
+* Customer segmentation using boxplots
+* Correlation analysis using heatmaps
+* Relationship analysis (scatter plots)
+
+
+
+###  4. Statistical Analysis
+
+* Correlation analysis revealed:
+
+  * ADR vs total_guests → **0.407 (moderate positive)**
+  * ADR vs children → **0.339**
+* Regression model built to predict ADR
+* Key drivers identified:
+
+  * **Children (strongest impact)**
+  * Adults and total guests
+  * Length of stay (minimal impact)
+
+
+
+##  Key Findings
+
+* Customer composition significantly impacts pricing
+* Bookings with children generate higher revenue
+* Group size influences ADR more than stay duration
+* Different customer segments exhibit distinct spending behavior
+
+
+
+##  Business Recommendations
+
+* Target **family customers** through marketing campaigns
+* Develop **family packages and offers**
+* Optimize pricing based on **group composition**
+* Focus on **high-value customer segments**
+
+
+##  Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Seaborn
+* Matplotlib
+* Scikit-learn
+
+
+
+## 📎 Project Notebook
+
+ [View Full Notebook](https://github.com/jeremydouti2-hub/Data-Science-Projects/blob/main/Customer_Satisfaction_Analysis.ipynb)
+
+
+
+##  References
+
+1. Kaggle – Hotel Booking Demand Dataset
+2. Scikit-learn Documentation
+3. Pandas & NumPy Libraries
+4. Seaborn & Matplotlib Visualization Tools
+
+
+
+##  Author
+
+**Gountante Douti**
+Data Science & Analytics Student
+
+
+
+##  Notes
+
+This project demonstrates a real-world application of **data preprocessing and analytics pipelines**, combining technical implementation with business insights.
+
